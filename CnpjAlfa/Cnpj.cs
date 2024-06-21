@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CnpjAlfa
 {
     //*************************************************************************************
-    // Credito do código : para Elemar Júnior
+    // Credito/Autoria do código : Elemar Júnior
     // Ref: https://elemarjr.com/arquivo/validando-cnpj-respeitando-o-garbage-collector
     // Ajuste para Novo modelo de CNPJ : Fernando Cerqueira
     // https://github.com/FRACerqueira/CnpjAlfaNumerico 
