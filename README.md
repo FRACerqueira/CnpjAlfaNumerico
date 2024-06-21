@@ -2,7 +2,7 @@
 
 A Receita Federal anunciou uma mudança no Cadastro Nacional de Pessoas Jurídicas, introduzindo um novo formato de identificação que combinará números e letras (CNPJ Alfanumérico), conforme a Nota Técnica COCAD/SUARA/RFB nº 49/2024.
 
-![](./images/cnpj_de_para.png)
+![](./Images/cnpj_de_para.png)
 
 ### A fórmula de cálculo do dígito verificador do CNPJ Alfanumérico não muda: foi mantido o cálculo pelo módulo 11.
 
@@ -16,7 +16,7 @@ Os caracteres alfanuméricos terão os seguintes valores: **A=17, B=18, C=19…** e 
 O desenho abaixo mostra a correspondência entre letras e números e seus 
 respectivos valores na tabela ASCII:
 
-![](./images/ascii.png)
+![](./Images/ascii.png)
 
 # Creditos
 
@@ -25,4 +25,4 @@ Todo o código apresentado é de autoria de ao Elemar Júnior! apenas fizemos uma p
 ref: https://elemarjr.com/arquivo/validando-cnpj-respeitando-o-garbage-collector
 
 # Resultados para 3.000.000 validações
-![](./images/capturateste.png)
+![](./Images/capturateste.png)
