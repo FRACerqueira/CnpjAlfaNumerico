@@ -9,7 +9,7 @@ namespace CnpjAlfa
     //*************************************************************************************
     // Credito/Autoria do código : Elemar Júnior
     // Ref: https://elemarjr.com/arquivo/validando-cnpj-respeitando-o-garbage-collector
-    // Ajuste para Novo modelo de CNPJ : Fernando Cerqueira
+    // Ajuste para Novo modelo de CNPJ
     // https://github.com/FRACerqueira/CnpjAlfaNumerico 
     //*************************************************************************************
     public readonly struct Cnpj
@@ -34,9 +34,12 @@ namespace CnpjAlfa
             var totalDigito1 = 0;
             var totalDigito2 = 0;
 
+            static bool IsValidInput(char c) =>
+                    char.IsAsciiDigit(c) || char.IsAsciiLetterUpper(c);
+
             foreach (var c in value!)
             {
-                if (char.IsAsciiDigit(c) || char.IsAsciiLetterUpper(c))
+                if (IsValidInput(c))
                 {
                     var digito = c - '0';
                     if (posicao != 0 && ultimoDigito != digito)
